@@ -63,7 +63,7 @@
     [RACObserve(redV, center) subscribeNext:^(id x) {
         NSLog(@"value = %@", x);
     }];
-    weakify(self);
+//    weakify(self);
     
 }
 
