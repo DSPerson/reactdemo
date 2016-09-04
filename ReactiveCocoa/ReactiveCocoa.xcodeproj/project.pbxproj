@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		215AD7771D7B07FD004A6933 /* MethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215AD7761D7B07FD004A6933 /* MethodViewController.m */; };
+		215AD77A1D7B0CD7004A6933 /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 215AD7791D7B0CD7004A6933 /* RedView.m */; };
 		2356FA778F096AE240A28FE0 /* Pods_ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FD695E885F525808F8A0F7 /* Pods_ReactiveCocoa.framework */; };
 		B61E7FD31D7961F300BD0C76 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B61E7FD21D7961F300BD0C76 /* BaseViewController.m */; };
 		B61E7FD81D79676F00BD0C76 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B61E7FD71D79676F00BD0C76 /* Reachability.m */; };
@@ -20,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		215AD7751D7B07FD004A6933 /* MethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodViewController.h; sourceTree = "<group>"; };
+		215AD7761D7B07FD004A6933 /* MethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodViewController.m; sourceTree = "<group>"; };
+		215AD7781D7B0CD7004A6933 /* RedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedView.h; sourceTree = "<group>"; };
+		215AD7791D7B0CD7004A6933 /* RedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedView.m; sourceTree = "<group>"; };
 		7C36C8E74325AEAB46B50CAB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4EB34F2A6CE73673B2C57B /* Pods-ReactiveCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoa/Pods-ReactiveCocoa.debug.xcconfig"; sourceTree = "<group>"; };
 		B61E7FD11D7961F300BD0C76 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -97,6 +103,10 @@
 			children = (
 				B61E7FDA1D796E1600BD0C76 /* NextViewController.h */,
 				B61E7FDB1D796E1600BD0C76 /* NextViewController.m */,
+				215AD7751D7B07FD004A6933 /* MethodViewController.h */,
+				215AD7761D7B07FD004A6933 /* MethodViewController.m */,
+				215AD7781D7B0CD7004A6933 /* RedView.h */,
+				215AD7791D7B0CD7004A6933 /* RedView.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -279,8 +289,10 @@
 			files = (
 				B62013DA1D59F10F0099DC8A /* ViewController.m in Sources */,
 				B61E7FDC1D796E1600BD0C76 /* NextViewController.m in Sources */,
+				215AD77A1D7B0CD7004A6933 /* RedView.m in Sources */,
 				B61E7FD31D7961F300BD0C76 /* BaseViewController.m in Sources */,
 				B62013D71D59F10F0099DC8A /* AppDelegate.m in Sources */,
+				215AD7771D7B07FD004A6933 /* MethodViewController.m in Sources */,
 				B62013D41D59F10F0099DC8A /* main.m in Sources */,
 				B61E7FD81D79676F00BD0C76 /* Reachability.m in Sources */,
 			);
@@ -398,9 +410,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ReactiveCocoa/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = ReactiveCocoa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xijiajiaoyu.ReactiveCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,9 +428,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ReactiveCocoa/Config/PrefixHeader.pch";
 				INFOPLIST_FILE = ReactiveCocoa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xijiajiaoyu.ReactiveCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
